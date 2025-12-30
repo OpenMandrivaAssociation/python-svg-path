@@ -3,7 +3,7 @@
 
 Name:		python-svg-path
 Version:	6.3
-Release:	1
+Release:	2
 Summary:	SVG path objects and parser
 URL:		https://github.com/regebro/svg.path
 License:	MIT

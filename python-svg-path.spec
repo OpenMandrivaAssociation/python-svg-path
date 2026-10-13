@@ -17,7 +17,9 @@ Source0:	https://github.com/regebro/svg.path/archive/%{version}/%{oname}-%{versi
 BuildArch:	noarch
 BuildRequires:	python
 BuildRequires:	pkgconfig(python3)
+BuildRequires:	python%{pyver}dist(pip)
 BuildRequires:	python%{pyver}dist(setuptools)
+BuildRequires:	python%{pyver}dist(wheel)
 %if %{with tests}
 BuildRequires:	python%{pyver}dist(pytest)
 BuildRequires:	python%{pyver}dist(pillow)
@@ -50,7 +52,7 @@ export PYTHONPATH="%{buildroot}%{python_sitelib}:${PWD}"
 
 %files
 %{py_sitedir}/svg
-%{py_sitedir}/%{oname}-%{version}*.*-info
+%{py_sitedir}/svg_path-%{version}.dist-info
 %doc README.rst
 %doc CHANGES.txt
 %license LICENSE.txt

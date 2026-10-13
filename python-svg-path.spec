@@ -16,7 +16,7 @@ Source0:	https://github.com/regebro/svg.path/archive/%{version}/%{oname}-%{versi
 
 BuildArch:	noarch
 BuildRequires:	python
-BuildRequires:	pkgconfig(python)
+BuildRequires:	pkgconfig(python3)
 BuildRequires:	python%{pyver}dist(setuptools)
 %if %{with tests}
 BuildRequires:	python%{pyver}dist(pytest)
